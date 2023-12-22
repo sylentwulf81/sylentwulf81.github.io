@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Center buttons and add space between them */
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px; /* Adjust the margin to control spacing */
+        }
+    </style>
+</head>
+<body>
+    <script src="diceroller2.js"></script>
+    <script src="testbutton.js"></script>
+    <main>
+        <h2>Die Roller</h2>
+        <p><h1>Click a button, roll a die!</h1></p>
+        <p><h2>Result: <span id="resultDisplay"></span></h2></p>
+        <button id="die4" onclick="rollFourSided()">4-Sided Die</button>
+        <button id="die6" onclick="rollSixSided()">6-Sided Die</button>
+        <button id="die8" onclick="rollEightSided()">8-Sided Die</button>
+        <button id="die10" onclick="rollTenSided()">10-Sided Die</button>
+        <button id="die12" onclick="rollTwelveSided()">12-Sided Die</button>
+        <button id="die20" onclick="rollTwentySided()">20-Sided Die</button>
+    </main>
+</body>
+</html>
